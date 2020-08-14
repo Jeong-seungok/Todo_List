@@ -1,0 +1,133 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(#ec7631,#e72d2d);
+}
+/* HEADER & FORM */
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+form div{
+    display: flex;
+}
+form input{
+    width: 20rem;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+form button{
+    border: none;
+    font-size: 1.5rem;
+    color: #ec7631;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 1rem;
+}
+form button:hover{
+    color: #fff;
+    background: #e72d2d;
+}
+.select{
+    align-items: center ;
+    position: relative;
+    margin: 0 0 0 0.5rem;
+    background: #fff;
+    overflow: hidden;
+}
+select{
+    padding: 1.3rem;
+    width: 12rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #ec7631;
+    appearance: none;
+    cursor: pointer;
+}
+.select::after{
+    position: absolute;
+    content: '\25BC';
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 1.5rem 1rem;
+    pointer-events: none;
+    color: red;
+    transition: all 0.5s;
+}
+.select:hover::after{
+    background: red;
+    color: #fff;
+}
+
+/* TODO */
+.todo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo_list{
+    display: flex;
+    min-width: 30%;
+    max-width: 50%;
+    background: #fff;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    transition: 1s;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.todo_list .todo_content{
+    flex: 1;
+    overflow: hidden;
+    padding: 1rem;
+}
+.todo_list button{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    background: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.todo_list .completed_btn{
+    color: #00d600;
+}
+.todo_list .removed_btn{
+    color: #e72d2d;
+}
+.todo_list .completed_btn:hover{
+    background: #00d600;
+    color: #fff;
+}
+.todo_list .removed_btn:hover{
+    background: #e72d2d;
+    color: #fff;
+}
+.todo_list i{
+    pointer-events: none;
+}
+.todo_list.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.todo_list.removed{
+    transform: rotateZ(20deg);
+    top: 10rem;
+    opacity: 0;
+}

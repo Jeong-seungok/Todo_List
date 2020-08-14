@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo_List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/2f9ac1e29b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2>Seung-Ok's Todo_List</h2>
+    </header>
+    <form action="#">
+        <div>
+            <input class="todo_input" type="text" placeholder="Add your Todo-List">
+            <button class="add_btn" type="submit"><i class="far fa-plus-square"></i></button>
+            <div class="select">
+                <select name="select">
+                    <option value="All">All</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <ul class="todo"></ul>
+    <script src="./index.js"></script>
+</body>
+</html>
